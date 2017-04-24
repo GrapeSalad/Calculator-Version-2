@@ -22,7 +22,7 @@ var modulus = function(number1, number2){
 };
 
 var squareroot = function(number1){
-  return = Math.sqrt(number1).toFixed(3);
+  return Math.sqrt(number1).toFixed(3);
 };
 
 // USER PROMPTS
