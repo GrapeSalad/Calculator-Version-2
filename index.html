@@ -19,17 +19,59 @@
           <label for="num2">2nd number:</label>
           <input id="num2" class="form-control" type="text">
         </div>
-        <button type="submit" class="btn">Add!</button>
+        <div class="radio">
+          <label>
+            <input type="radio" name="operator" value="add">
+          </label>
+        </div>
+
+        <div class="radio">
+          <label>
+            <input type="radio" name="operator" value="subtract">
+            Subtract
+          </label>
+        </div>
+
+        <div class="radio">
+          <label>
+            <input type="radio" name="operator" value="multiply">
+            Multiply
+          </label>
+        </div>
+
+        <div class="radio">
+          <label>
+            <input type="radio" name="operator" value="divide">
+            Divide
+          </label>
+        </div>
+
+        <div class="radio">
+          <label>
+            <input type="radio" name="operator" value="modulus">
+            Modulus
+          </label>
+        </div>
+
+        <div class="radio">
+          <label>
+            <input type="radio" name="operator" value="sqrt">
+            SqRt
+          </label>
+        </div>
+
+        <button type="submit" name="calculate">Math it!</button>
       </form>
-      <div id="output">
-        <ul>
-          <li id="outputAdd"></li>
-          <li id="outputSubtract"></li>
-          <li id="outputMultiply"></li>
-          <li id="outputDivide"></li>
-          <li id="outputModulus"></li>
-          <li id="outputSqrRt"></li>
-        </ul>
+      <div class="row">
+        <div class="col-sm-3">
+        </div>
+        <div class="col-sm-6">
+          <div id="output">
+
+          </div>
+        </div>
+        <div class="col-sm-3">
+        </div>
       </div>
     </div>
   </body>

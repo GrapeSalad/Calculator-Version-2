@@ -24,11 +24,31 @@ $(document).ready(function() {
 
     var number1 = parseInt($("#num1").val());
     var number2 = parseInt($("#num2").val());
+    var operatorType = $("input:radio[name=operator]:checked").val();
+    console.log(operatorType);
 
-    $("#outputAdd").text("Adding these results in " + add(number1, number2));    $("#outputSubtract").text("Subtracting these results in " + subtract(number1, number2));
-    $("#outputMultiply").text("Multiplying these results in " + multiply(number1, number2));
-    $("#outputDivide").text("Dividing these results in " + divide(number1, number2));
-    $("#outputModulus").text("The remainder (modulus) of these results is " + modulus(number1, number2));
-    $("#outputSqrRt").text("The square root of this number is " + squareroot(number1));
+    if(operatorType === "add"){
+      $("#output").text("Adding these results in " + add(number1, number2));
+    };
+
+    if(operatorType === "subtract") {
+      $("#output").text("Subtracting these results in " + subtract(number1, number2));
+    };
+
+    if(operatorType === "multiply") {
+      $("#output").text("Multiplying these results in " + multiply(number1, number2));
+    };
+
+    if(operatorType === "divide") {
+      $("#output").text("Dividing these results in " + divide(number1, number2));
+    };
+
+    if(operatorType === "modulus") {
+      $("#output").text("The remainder (modulus) of these results is " + modulus(number1, number2));
+    };
+
+    if(operatorType === "sqrt") {
+      $("#output").text("The square root of this number is " + squareroot(number1));
+    };
   });
 });
